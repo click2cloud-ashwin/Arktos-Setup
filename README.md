@@ -7,7 +7,7 @@
 
 
 ```bash
-wget https://raw.githubusercontent.com/Click2Cloud-Centaurus/Documentation/main/deployment_scripts/arktos-setup.sh
+wget https://raw.githubusercontent.com/click2cloud-team3/Arktos-Setup/master/arktos-setup.sh
 bash arktos-setup.sh
 ```
 The lab machine will be rebooted once above script is completed, you will be automatically logged out of the lab machine.
