@@ -123,20 +123,7 @@ echo PATH=\"\$HOME/go/src/k8s.io/arktos/third_party/etcd:/usr/local/go/bin:\$HOM
 echo GOPATH=\"\$HOME/go\" >> ~/.profile
 echo GOROOT=\"/usr/local/go\" >> ~/.profile
 echo >> ~/.profile
-echo alias arktos=\"cd \$HOME/go/src/k8s.io/arktos\" >> ~/.profile
-echo alias k8s=\"cd \$HOME/go/src/k8s.io/kubernetes\" >> ~/.profile
-echo alias up=\"\$HOME/go/src/k8s.io/arktos/hack/arktos-up.sh\" >> ~/.profile
-echo alias status=\"git status\" >> ~/.profile
-echo alias pods=\"kubectl get pods -A -o wide\" >> ~/.profile
-echo alias nets=\"echo 'kubectl get subnets'\; kubectl get subnets\; echo\; echo 'kubectl get droplets'\; kubectl get droplets\; echo\; echo 'kubectl get bouncers'\; kubectl get bouncers\; echo\; echo 'kubectl get dividers'\; kubectl get dividers\; echo\; echo 'kubectl get vpcs'\; kubectl get vpcs\; echo\; echo 'kubectl get eps'\; kubectl get eps\; echo\; echo 'kubectl get networks'\; kubectl get networks\" >> ~/.profile
 echo alias kubectl=\'$HOME/go/src/k8s.io/arktos/cluster/kubectl.sh\'  >> ~/.profile
-echo alias kubeop=\"kubectl get pods \|\ grep mizar-operator \|\ awk \'{print \$1}\' \|\ xargs -i kubectl logs {}\"  >> ~/.profile
-echo alias kubed=\"kubectl get pods \|\ grep mizar-daemon \|\ awk \'{print \$1}\' \|\ xargs -i kubectl logs {}\"  >> ~/.profile
-echo export CONTAINER_RUNTIME_ENDPOINT=\"\containerRuntime,container,/run/containerd/containerd.sock\" >> ~/.profile
-echo export KUBECTL_LOG=\"\/tmp/${USER}_kubetctl.err\" >> ~/.profile
-echo export GPG_TTY=\$\(tty\) >> ~/.profile
-echo cd \$HOME/go/src/k8s.io/arktos >> ~/.profile
-
 source "$HOME/.profile"
 
 ####################
